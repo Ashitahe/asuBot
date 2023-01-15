@@ -1,0 +1,49 @@
+{
+  "serverConfig": {
+    "host": "127.0.0.1",
+    "port": 9967
+  },
+  "postServerConfig": {
+    "host": "127.0.0.1",
+    "port": 9999
+  },
+  "plugin": {
+    "setu": true
+  },
+  "privateResponseConfig": {
+    "managamentId": [],
+    "action": [
+      {
+        "receiveMsg": "777",
+        "replyMsg": 777
+      },
+      {
+        "receiveMsg": "HHH",
+        "replyMsg": "AAA"
+      }
+    ],
+    "batch": false
+  },
+  "groupResponseConfig": {
+    "managamentGroup": [],
+    "action": [
+      {
+        "receiveMsg": "777",
+        "replyMsg": 777
+      }
+    ]
+  },
+  "commonResponseConfig": {
+    "action": [
+      {
+        "receiveMsg": "hhh",
+        "replyMsg": 999
+      },
+      {
+        "receiveMsg": "setu",
+        "callPlugin": true,
+        "callFunc": "getSetu"
+      }
+    ]
+  }
+}
